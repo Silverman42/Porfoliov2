@@ -1,0 +1,54 @@
+.contain{
+    @apply bg-primary-100 rounded-3xl px-5 py-7;
+    @apply transition-all
+}
+
+.contain:hover{
+    @apply bg-primary-600 shadow-xl transform -translate-y-1
+}
+
+.link-container{
+    @apply flex justify-between items-center
+}
+.links{
+    @apply flex justify-end items-center
+}
+
+.links > a{
+    @apply text-primary-400 mx-2
+}
+
+.links > a:last{
+    @apply mr-0
+}
+.project-icon{
+    @apply inline-block mt-2 text-secondary-500
+}
+.project-description{
+    @apply text-base mb-5 text-primary-500
+}
+
+.project-name{
+    @apply text-lg font-bold my-5 block text-primary-600
+}
+
+.tech-stack {
+    @apply flex flex-wrap font-mono text-xs text-primary-400
+}
+
+.tech-stack > span {
+    @apply inline-block mr-3 mb-3
+}
+
+.contain:hover .links > a,
+.contain:hover > .tech-stack{
+    @apply text-purple-300
+}
+
+.contain:hover >.project-description{
+    @apply text-purple-100
+}
+
+.contain:hover >.project-name{
+    @apply text-white
+}

@@ -1,0 +1,52 @@
+.tab-header {
+    @apply flex items-center list-none overflow-x-auto;
+  }
+  .tab-body {
+    @apply py-5;
+  }
+  .tab-btns:first-child {
+    @apply ml-0;
+  }
+  .tab-btns:last-child {
+    @apply mr-0;
+  }
+  .tab-btns {
+    @apply py-4 font-mono text-gray-500 mx-2 cursor-pointer rounded-md inline-block w-auto text-xs capitalize whitespace-nowrap;
+    @apply transition-all duration-200 ease-in;
+  }
+  
+  .tab-btns.active,
+  .tab-btns:hover {
+    @apply relative text-primary-700;
+  }
+  .tab-btns.active::after {
+    content: '';
+    padding: 1px;
+    @apply absolute w-full bottom-0 right-0 rounded-full bg-primary-700;
+  }
+  @screen md {
+    .tab-container {
+      @apply flex items-stretch;
+    }
+    .tab-container > header{
+        @apply border-l border-gray-200
+    }
+    .tab-header {
+      margin-left: -2px;
+      @apply flex-col items-start;
+    }
+    .tab-body {
+      @apply flex-grow py-0 pl-5;
+    }
+    .tab-btns {
+      @apply px-5 mx-0 w-full text-left rounded-none;
+    }
+    .tab-btns.active {
+      @apply bg-primary-100 rounded-r-full;
+    }
+    .tab-btns.active::after {
+      content: '';
+      @apply absolute h-full p-0 w-1 bottom-0 left-0 rounded-full bg-primary-700;
+    }
+  }
+  

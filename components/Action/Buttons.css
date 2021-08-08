@@ -1,0 +1,39 @@
+.btn{
+    @apply px-6 py-3 text-base focus:ring-4 font-bold focus:outline-none w-full rounded-md shadow-lg inline-flex justify-around items-center;
+}
+
+.btn-rounded{
+    @apply rounded-full
+}
+.btn-primary{
+    @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-200;
+}
+.btn-secondary{
+    @apply bg-secondary-300 text-white hover:bg-secondary-500 focus:ring-secondary-200;
+}
+.btn-primary-inverse{
+    @apply bg-transparent border-2 text-primary-600 border-primary-600 hover:text-white hover:bg-primary-700 hover:border-primary-700 focus:ring-primary-200;
+}
+.btn-secondary-inverse{
+    @apply bg-transparent border-2 text-secondary-300 border-secondary-300 hover:text-primary-600 hover:bg-secondary-400 hover:border-secondary-400 focus:ring-secondary-200;
+}
+
+.btn-borderless{
+    @apply border-0
+}
+
+.btn-xs{
+    @apply text-xs
+}
+
+.btn-sm{
+    @apply text-sm
+}
+
+.btn-lg{
+    @apply text-lg
+}
+
+.btn:disabled{
+    @apply opacity-70 cursor-not-allowed
+}
