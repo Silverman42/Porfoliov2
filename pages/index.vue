@@ -7,7 +7,30 @@
     <about />
     <!-- About end -->
     <!-- Work start -->
-    <work />
+    <work>
+      <tab :tabs="workplace" :default-active-tab="workplace[0]">
+        <template
+          v-for="(experience, index) in experiences"
+          #[`tab-body-${workplace[index]}`]
+        >
+          <div :key="index">
+            <h3 class="text-lg">
+              <span class="text-gray-800">{{ experience.title }}</span>
+              <span class="text-primary-700">@ {{ experience.fullname }}</span>
+            </h3>
+            <p class="font-mono text-xs text-gray-500">
+              <span>{{ experience.from }}</span> -
+              <span>{{ experience.to }}</span>
+            </p>
+            <div class="my-5 text-gray-500">
+              <nuxt-content
+                :document="{ body: experience.body }"
+              ></nuxt-content>
+            </div>
+          </div>
+        </template>
+      </tab>
+    </work>
     <!-- Work end -->
     <!-- projects start -->
     <project-container>
@@ -29,52 +52,30 @@ export default {
     const projects = await $content('projects')
       .only(['fullname', 'description', 'devstack', 'weblink', 'github'])
       .fetch()
+    const experiences = await $content('work')
+      .only(['name', 'title', 'from', 'to', 'body', 'fullname'])
+      .fetch()
+    const workplace = await experiences.map((job) => {
+      return job.name.replace(' ', '-')
+    })
     return {
       projects,
+      experiences,
+      workplace,
     }
   },
   data() {
-    return {
-      new: '',
-    }
+    return {}
   },
 }
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
+.nuxt-content ul li {
+  @apply mb-5 relative pl-5;
 }
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.nuxt-content ul li::before {
+  content: '▹';
+  @apply text-primary-400 top-0 left-0 absolute text-base;
 }
 </style>
