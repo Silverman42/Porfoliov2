@@ -23,9 +23,8 @@
             <h2 class="text-white text-2xl md:text-5xl mb-3">Get in Touch</h2>
           </div>
           <p class="text-primary-200 text-sm">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro non
-            aspernatur, in voluptatibus iure nisi similique, quos, maxime modi
-            assumenda
+            I am very open to collaborations and consultations. You could reach
+            me on my social media handles or email.
           </p>
         </div>
         <div class="md:w-36 w-full my-5">
