@@ -17,7 +17,6 @@
             bg-clip-text bg-gradient-to-r
             from-primary-700
             to-secondary-500
-            bg-fixed
             text-transparent
           "
           >small to medium scale businesses</span

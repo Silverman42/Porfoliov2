@@ -1,17 +1,9 @@
 ---
 name: Firmtech
 fullname: Firmtech Technologies
-title: Software Engineer
-from: January 2021
+title: Lead Software Engineer
+from: March 2021
 to: Present
 ---
 
-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-  corporis soluta odio error, numquam optio corrupti obcaecati hic
-  dolor inventore est repudiandae ratione tenetur blanditiis assumenda
-  sequi unde mollitia dolore!
-
-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-  corporis soluta odio error, numquam optio corrupti obcaecati hic
-  dolor inventore est repudiandae ratione tenetur blanditiis assumenda
-  sequi unde mollitia dolore!
+- Leading a group of exceedingly talented engineers in developing and maintaining a unique fuel dispatch service called <b> Gasapp </b> (https://www.gasapp.company)

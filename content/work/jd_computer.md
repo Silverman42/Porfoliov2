@@ -1,17 +1,13 @@
 ---
 name: JD-Computers
 fullname: JD Computer Technologies
-title: Software Engineer
-from: January 2021
+title: Lead Software Engineer (Contract)
+from: January 2019
 to: Present
 ---
 
-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-  corporis soluta odio error, numquam optio corrupti obcaecati hic
-  dolor inventore est repudiandae ratione tenetur blanditiis assumenda
-  sequi unde mollitia dolore!
+- Tutored and mentored over 30 students on full-stack web development courses.
 
-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-  corporis soluta odio error, numquam optio corrupti obcaecati hic
-  dolor inventore est repudiandae ratione tenetur blanditiis assumenda
-  sequi unde mollitia dolore!
+- Performed the role of project manager and frontend developer in the development of a large-scale multi-vendor e-commerce website (http://247stores.com.ng) that aims to serve thousands of stores nationwide.
+
+- Redesigned the company website (https://jdtechnologies.netlify.com/ ) using Vuejs and Tailwind

@@ -1,17 +1,13 @@
 ---
 name: DSIHUB
 fullname: DSIHUB
-title: Software Engineer
-from: January 2021
-to: Present
+title: Frontend Engineer /  Web Development Tutor
+from: May 2017
+to: October 2019,
 ---
 
-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-  corporis soluta odio error, numquam optio corrupti obcaecati hic
-  dolor inventore est repudiandae ratione tenetur blanditiis assumenda
-  sequi unde mollitia dolore!
+- Tutored and mentored over 30 students on the fundamentals of web development
 
-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-  corporis soluta odio error, numquam optio corrupti obcaecati hic
-  dolor inventore est repudiandae ratione tenetur blanditiis assumenda
-  sequi unde mollitia dolore!
+- Designed flyers and pamphlets for occasions organized by the hub using Corel Draw
+
+- Designed the proposed website for DSIHUB (https://silverman42.github.io/newDSIHUB/)

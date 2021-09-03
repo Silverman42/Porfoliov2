@@ -1,15 +1,13 @@
 ---
 name: CryptoWave
-fullname: Miss May Day Beauty Pageant Website
+fullname: Cryptowave
 devstack:
-  - Laravel
-  - Vuejs
-  - Inertiajs
+  - NuxtJs
   - TailwindCSS
-weblink: http://www.mmdbp.herokuapp.com
-github: http://www.mmdbp.herokuapp.com
+weblink: https://crypto-wave.netlify.app/
+github: https://github.com/Silverman42/CryptoWave
 ---
 
-Official website for the Miss May Day Beauty Pageant
+A web application for get precise information about crypto currencies and markets
 
 <!--more-->

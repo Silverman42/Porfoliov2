@@ -5,10 +5,20 @@
         <box-icon size="1.9x"></box-icon>
       </span>
       <div class="links">
-        <a :href="getData().github" target="_blank" class="link-icon">
+        <a
+          v-if="getData().github"
+          :href="getData().github"
+          target="_blank"
+          class="link-icon"
+        >
           <github-icon size="1.3x"></github-icon>
         </a>
-        <a :href="getData().weblink" target="_blank" class="link-icon">
+        <a
+          v-if="getData().weblink"
+          :href="getData().weblink"
+          target="_blank"
+          class="link-icon"
+        >
           <external-link-icon size="1.3x" />
         </a>
       </div>
@@ -53,7 +63,7 @@ export default {
         fullname: this.cardData?.fullname,
         description: this.cardData?.description,
         weblink: this.cardData?.weblink,
-        github: this.cardData?.weblink,
+        github: this.cardData?.github,
         devstack: this.cardData?.devstack || [],
       }
     },

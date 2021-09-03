@@ -6,8 +6,7 @@ devstack:
   - Vuejs
   - Inertiajs
   - TailwindCSS
-weblink: http://www.mmdbp.herokuapp.com
-github: http://www.mmdbp.herokuapp.com
+weblink: http://mmdbp.herokuapp.com/
 ---
 
 Official website for the Miss May Day Beauty Pageant

@@ -9,19 +9,41 @@
         <div class="ml-4 flex-grow border-b-2"></div>
       </div>
       <div class="flex flex-col-reverse lg:flex-row lg:justify-between">
-        <div class="text-gray-600 text-lg lg:w-5/12">
+        <div class="text-gray-600 text-base lg:w-6/12">
           <p class="mb-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            corporis soluta odio error, numquam optio corrupti obcaecati hic
-            dolor inventore est repudiandae ratione tenetur blanditiis assumenda
-            sequi unde mollitia dolore!
+            My name is Sylvester Uche Nkeze (SUN), a full-stack software
+            engineer with over 5 years of experience building web applications
+            for SMEs and startups. I am a staunch audiophile (synth waves and
+            frank Sinatra in work mode). These days, I enjoy engaging in
+            design-centric tasks ranging from front-end development to User
+            Interface design. This interest in design stems from my love for art
+            and my desire to make the engagement of digital products extremely
+            smooth and enticing.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            corporis soluta odio error, numquam optio corrupti obcaecati hic
-            dolor inventore est repudiandae ratione tenetur blanditiis assumenda
-            sequi unde mollitia dolore!
+          <p class="mb-5">
+            My interest in web development started back in 2015 when I developed
+            a Financial accounting system as a final year project in university.
+            Since then, it has been a roller coaster of engagement with multiple
+            development tools and projects, all with the aim of helping to
+            simplify the technical difficulties faced by businesses and
+            individuals.
           </p>
+          <p class="mb-5">
+            Here are a few of the web tools I currently use and enjoy
+          </p>
+          <ul class="tool-list">
+            <li>Javascript</li>
+            <li>PHP 8</li>
+            <li>CSS 3</li>
+            <li>TailwindCSS</li>
+            <li>Vue Js</li>
+            <li>NuxtJs</li>
+            <li>Laravel Framework</li>
+            <li>Figma</li>
+            <li>NodeJs</li>
+            <li>Heroku</li>
+            <li>Git</li>
+          </ul>
         </div>
         <div class="mx-auto mb-5 lg:mb-0 w-40"></div>
       </div>
@@ -33,4 +55,15 @@
 export default {}
 </script>
 
-<style></style>
+<style>
+.tool-list {
+  @apply grid gap-2 grid-cols-2;
+}
+.tool-list li {
+  @apply mb-5 text-gray-800 relative capitalize pl-5;
+}
+.tool-list li::before {
+  content: '▹';
+  @apply text-primary-400 top-0 left-0 absolute text-base;
+}
+</style>

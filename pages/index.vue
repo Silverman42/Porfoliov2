@@ -78,4 +78,8 @@ export default {
   content: '▹';
   @apply text-primary-400 top-0 left-0 absolute text-base;
 }
+
+.nuxt-content a {
+  @apply text-primary-600 hover:text-primary-900;
+}
 </style>

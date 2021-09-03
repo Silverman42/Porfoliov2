@@ -31,7 +31,7 @@
         <div class="md:w-36 w-full my-5">
           <action-e-link
             :extra-css="['btn-secondary-inverse', 'btn-rounded']"
-            href="mailto:sylvesternkeze@gmail.com"
+            href="mailto:sylvesternkeze@gmail.com&subject=Hello Sylvester"
             target="_blank"
             >Say Hello</action-e-link
           >
