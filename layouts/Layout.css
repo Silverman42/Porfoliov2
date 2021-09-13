@@ -1,0 +1,14 @@
+.section-links{
+    @apply py-2 px-4 text-sm inline-block font-bold rounded-full text-primary-600 hover:bg-primary-200
+}
+
+.section-links.active{
+    @apply bg-primary-600 hover:bg-primary-800 text-primary-200
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+}

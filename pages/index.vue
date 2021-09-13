@@ -3,9 +3,16 @@
     <!-- Hero phrase start -->
     <hero />
     <!-- Hero phrase end -->
-    <!-- About start -->
-    <about />
-    <!-- About end -->
+    <!-- projects start -->
+    <project-container>
+      <project-card
+        v-for="(project, index) in projects"
+        :key="index"
+        :card-data="project"
+        :card-number="index + 1"
+      ></project-card>
+    </project-container>
+    <!-- projects end -->
     <!-- Work start -->
     <work>
       <tab :tabs="workplace" :default-active-tab="workplace[0]">
@@ -22,7 +29,7 @@
               <span>{{ experience.from }}</span> -
               <span>{{ experience.to }}</span>
             </p>
-            <div class="my-5 text-gray-500">
+            <div class="my-5 text-gray-500 break-words">
               <nuxt-content
                 :document="{ body: experience.body }"
               ></nuxt-content>
@@ -32,15 +39,9 @@
       </tab>
     </work>
     <!-- Work end -->
-    <!-- projects start -->
-    <project-container>
-      <project-card
-        v-for="(project, index) in projects"
-        :key="index"
-        :card-data="project"
-      ></project-card>
-    </project-container>
-    <!-- projects end -->
+    <!-- About start -->
+    <about />
+    <!-- About end -->
     <bottom />
   </div>
 </template>

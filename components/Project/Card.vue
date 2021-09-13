@@ -2,7 +2,7 @@
   <div class="contain">
     <div class="link-container">
       <span class="project-icon">
-        <box-icon size="1.9x"></box-icon>
+        <span>{{ cardNumber | prependNumber }}</span>
       </span>
       <div class="links">
         <a
@@ -36,12 +36,19 @@
 </template>
 
 <script>
-import { BoxIcon, GithubIcon, ExternalLinkIcon } from 'vue-feather-icons'
+import { GithubIcon, ExternalLinkIcon } from 'vue-feather-icons'
 export default {
   components: {
-    BoxIcon,
     GithubIcon,
     ExternalLinkIcon,
+  },
+  filters: {
+    prependNumber(number) {
+      return number.toLocaleString('en-US', {
+        minimumIntegerDigits: 2,
+        useGrouping: false,
+      })
+    },
   },
   props: {
     cardData: {
@@ -55,6 +62,10 @@ export default {
           devstack: ['HTML', 'CSS', 'VueJS'],
         }
       },
+    },
+    cardNumber: {
+      type: Number,
+      default: 1,
     },
   },
   methods: {

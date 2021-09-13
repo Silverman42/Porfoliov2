@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans relative">
+  <div class="font-sans relative pb-20 md:pb-10">
     <img
       src="/patterns/yellow_ellipse.png"
       class="w-52 h-auto top-0 right-0 hidden md:block absolute"
@@ -10,7 +10,7 @@
       <div
         class="
           px-4
-          md:px-0
+          lg:px-0
           max-w-5xl
           mx-auto
           flex
@@ -20,7 +20,7 @@
         "
       >
         <div class="w-20 font-bold">S U N</div>
-        <nav class="flex items-center text-sm">
+        <nav v-if="isHomePage === true" class="flex items-center text-sm">
           <ul class="md:flex items-center mr-4 hidden">
             <li class="mr-9">
               <a href="#trading" class="hover:text-primary-500">About</a>
@@ -37,44 +37,19 @@
           </ul>
         </nav>
         <div class="p-2 border border-primary-300 rounded-full">
-          <a
-            href="mailto:snkeze@gmail.com"
-            class="
-              py-2
-              px-4
-              text-sm
-              inline-block
-              font-bold
-              rounded-full
-              bg-primary-600
-              text-white
-              hover:bg-primary-800
-            "
-          >
-            Profile
-          </a>
-          <a
-            href="mailto:snkeze@gmail.com"
-            class="
-              py-2
-              ml-2
-              px-4
-              text-sm
-              leading-none
-              inline-block
-              rounded-full
-              bg-transparent
-              font-bold
-              text-primary-600
-              hover:bg-primary-100
-            "
-          >
-            Blog
-          </a>
+          <nuxt-link exact active-class="active" to="/" class="section-links">
+            Pr<span class="hidden md:inline">ofile</span>
+          </nuxt-link>
+          <nuxt-link active-class="active" to="/blog" class="section-links">
+            Bl<span class="hidden md:inline">og</span>
+          </nuxt-link>
         </div>
       </div>
     </header>
-    <aside class="md:hidden block navbar fixed w-full bottom-0 left-0 z-20">
+    <aside
+      v-if="isHomePage === true"
+      class="md:hidden block navbar fixed w-full bottom-0 left-0 z-20"
+    >
       <ul
         class="
           max-w-5xl
@@ -85,29 +60,28 @@
           items-center
           py-4
           border-b-1
-          justify-between
           text-sm
           flex
           overflow-x-auto
           font-bold
         "
       >
-        <li class="">
+        <li class="inline-block w-auto mr-5">
           <a href="#trading" class="text-gray-700 hover:text-primary-500"
             >About</a
           >
         </li>
-        <li class="">
+        <li class="inline-block w-auto mr-5">
           <a href="#services" class="text-gray-700 hover:text-primary-500"
             >Portfolio</a
           >
         </li>
-        <li class="">
+        <li class="inline-block w-auto mr-5">
           <a href="#contact" class="text-gray-700 hover:text-primary-500"
             >Work</a
           >
         </li>
-        <li class="">
+        <li class="inline-block w-auto">
           <a href="#about" class="text-gray-700 hover:text-primary-500"
             >Contact</a
           >
@@ -120,11 +94,15 @@
     <email-comp />
   </div>
 </template>
-<style scoped>
-.navbar {
-  background: rgba(255, 255, 255, 0.45);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.38);
+<script>
+export default {
+  computed: {
+    isHomePage() {
+      return this.$route.name === 'index'
+    },
+  },
 }
+</script>
+<style scoped>
+@import '@/layouts/Layout.css';
 </style>

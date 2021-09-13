@@ -26,7 +26,7 @@ export default {
 
 <style scoped>
 .socials {
-  @apply flex items-center p-5 w-9/12 mx-auto justify-between;
+  @apply flex items-center relative z-20 p-5 w-9/12 mx-auto justify-between;
 }
 
 .socials .icons {

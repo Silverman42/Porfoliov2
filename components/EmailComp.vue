@@ -13,7 +13,7 @@ export default {}
 
 <style scoped>
 .mail {
-  @apply text-center p-5 w-9/12 mx-auto;
+  @apply text-center text-xs relative z-20 py-5 w-9/12 mx-auto;
 }
 
 .mail .link {
@@ -25,7 +25,7 @@ export default {}
 }
 @screen lg {
   .mail {
-    @apply justify-start items-center flex py-0 fixed bottom-0 right-0 px-8 w-auto flex-col h-3/5;
+    @apply justify-start text-base items-center flex py-0 fixed bottom-0 right-0 px-8 w-auto flex-col h-3/5;
   }
 
   .mail .link {

@@ -22,7 +22,11 @@
     @apply mr-0
 }
 .project-icon{
-    @apply inline-block mt-2 text-secondary-500
+    text-stroke: 1px theme('colors.secondary.500');
+    text-fill-color: transparent;
+    -webkit-text-stroke: 1px theme('colors.secondary.500');
+    -webkit-text-fill-color: transparent;
+    @apply inline-block mt-2 font-mono font-extrabold text-3xl
 }
 .project-description{
     @apply text-base mb-5 text-gray-600
@@ -42,11 +46,11 @@
 
 .contain:hover .links > a,
 .contain:hover > .tech-stack{
-    @apply text-purple-300
+    @apply text-primary-300
 }
 
 .contain:hover >.project-description{
-    @apply text-purple-100
+    @apply text-primary-100
 }
 
 .contain:hover >.project-name{

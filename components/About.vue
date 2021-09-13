@@ -3,7 +3,7 @@
     <div class="max-w-5xl mx-auto">
       <div class="mb-5 flex items-center max-w-md">
         <h2 class="text-gray-900 text-3xl font-bold">
-          <span class="font-mono text-primary-600 text-lg mr-2">01</span> About
+          <span class="font-mono text-primary-600 text-lg mr-2">03</span> About
           Me
         </h2>
         <div class="ml-4 flex-grow border-b-2"></div>
@@ -20,14 +20,14 @@
             and my desire to make the engagement of digital products extremely
             smooth and enticing.
           </p>
-          <p class="mb-5">
+          <!-- <p class="mb-5">
             My interest in web development started back in 2015 when I developed
             a Financial accounting system as a final year project in university.
             Since then, it has been a roller coaster of engagement with multiple
             development tools and projects, all with the aim of helping to
             simplify the technical difficulties faced by businesses and
             individuals.
-          </p>
+          </p> -->
           <p class="mb-5">
             Here are a few of the web tools I currently use and enjoy
           </p>
