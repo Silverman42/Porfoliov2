@@ -51,6 +51,10 @@ export default {
   components: {
     SearchIcon,
   },
+  transition: {
+    name: 'zoom',
+    mode: 'out-in',
+  },
 }
 </script>
 

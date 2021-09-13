@@ -13,7 +13,7 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'theme-color', content: '#533dc0' },
+      { name: 'theme-color', content: '#115e59' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
@@ -21,7 +21,11 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/fonts/mono/style.css', '@/assets/fonts/sofia_pro/style.css'],
+  css: [
+    '@/assets/fonts/mono/style.css',
+    '@/assets/fonts/sofia_pro/style.css',
+    '@/assets/css/animations.css',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],

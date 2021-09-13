@@ -1,0 +1,84 @@
+@keyframes slideUp{
+    0%{
+    transform: translateY(30px);
+        opacity: 0;
+        }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+        
+}
+
+@keyframes slideInRight{
+    0%{
+    transform: translateX(30px);
+        opacity: 0;
+        }
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+        
+}
+
+@keyframes slideInLeft{
+    0%{
+    transform: translateX(-30px);
+        opacity: 0;
+        }
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+        
+}
+
+.slideUp{
+    animation: slideUp 0.8s 1 0.4s cubic-bezier(0.1, 0.49, 0.2, 0.93) forwards;
+     -webkit-animation: slideUp 0.8s 1 0.4s cubic-bezier(0.1, 0.49, 0.2, 0.93) forwards;
+}
+
+.slideInRight{
+    animation: slideInRight 0.8s 1 0.4s cubic-bezier(0.1, 0.49, 0.2, 0.93) forwards;
+     -webkit-animation: slideInRight 0.8s 1 0.4s cubic-bezier(0.1, 0.49, 0.2, 0.93) forwards;
+}
+
+.slideInLeft{
+    animation: slideInLeft 0.8s 1 0.4s cubic-bezier(0.1, 0.49, 0.2, 0.93) forwards;
+     -webkit-animation: slideInLeft 0.8s 1 0.4s cubic-bezier(0.1, 0.49, 0.2, 0.93) forwards;
+}
+
+.hide-slideUp, .hide-slideInLeft, .hide-slideInRight{
+    opacity: 0;
+}
+
+.zoom-enter-active,.zoom-leave-active{
+    transition: transform 0.4s cubic-bezier(0.1, 0.49, 0.2, 0.93), opacity 0.4s cubic-bezier(0.1, 0.49, 0.2, 0.93);
+    -webkit-transition: transform 0.4s cubic-bezier(0.1, 0.49, 0.2, 0.93), opacity 0.4s cubic-bezier(0.1, 0.49, 0.2, 0.93);
+}
+.zoom-enter{
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    opacity: 0;
+}
+.zoom-leave-to{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    opacity: 0;
+}
+
+.swipe-enter-active,.swipe-leave-active{
+    transition: transform 0.4s cubic-bezier(0.1, 0.49, 0.2, 0.93), opacity 0.4s cubic-bezier(0.1, 0.49, 0.2, 0.93);
+    -webkit-transition: transform 0.4s cubic-bezier(0.1, 0.49, 0.2, 0.93), opacity 0.4s cubic-bezier(0.1, 0.49, 0.2, 0.93);
+}
+.swipe-enter{
+    transform: translateX(-10px);
+    -webkit-transform: scale(-10px);
+    opacity: 0;
+}
+.swipe-leave-to{ 
+    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    opacity: 0;
+}

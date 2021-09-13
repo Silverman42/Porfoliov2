@@ -49,6 +49,10 @@
 <script>
 export default {
   layout: 'Main',
+  transition: {
+    name: 'zoom',
+    mode: 'out-in',
+  },
   async asyncData({ $content }) {
     const projects = await $content('projects')
       .only(['fullname', 'description', 'devstack', 'weblink', 'github'])

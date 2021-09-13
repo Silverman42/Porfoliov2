@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 pt-14 pb-20 z-10 relative">
+  <div class="px-4 pt-5 pb-20 z-10 relative">
     <div
       class="
         flex
@@ -39,7 +39,7 @@
       </aside>
       <section class="w-full min-h-screen lg:flex-grow lg:mx-8 mb-10">
         <figure class="w-full h-72 bg-gray-700 rounded-lg mb-5"></figure>
-        <h1 class="text-gray-900 text-xl lg:text-3xl font-bold mb-5">
+        <h1 class="text-gray-900 text-3xl font-bold mb-5">
           Lorem ipsum dolor sit amet, consectetur adipisicing
         </h1>
         <div
@@ -104,6 +104,10 @@ export default {
     TwitterIcon,
     LinkedinIcon,
     FacebookIcon,
+  },
+  transition: {
+    name: 'zoom',
+    mode: 'out-in',
   },
 }
 </script>

@@ -50,7 +50,7 @@
       </div>
     </nuxt-link>
     <div class="w-full md:w-4/12 mb-5 md:mb-0">
-      <figure class="w-full h-24 rounded-lg bg-gray-600"></figure>
+      <figure class="w-full h-52 md:h-24 rounded-lg bg-gray-600"></figure>
     </div>
   </div>
 </template>

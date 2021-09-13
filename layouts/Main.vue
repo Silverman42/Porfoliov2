@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans relative pb-20 md:pb-10">
+  <div class="font-sans overflow-x-hidden relative pb-20 md:pb-10">
     <img
       src="/patterns/yellow_ellipse.png"
       class="w-52 h-auto top-0 right-0 hidden md:block absolute"
@@ -21,7 +21,7 @@
       >
         <div class="w-20 font-bold">S U N</div>
         <nav v-if="isHomePage === true" class="flex items-center text-sm">
-          <ul class="md:flex items-center mr-4 hidden">
+          <ul class="md:flex text-gray-600 items-center mr-4 hidden">
             <li class="mr-9">
               <a href="#trading" class="hover:text-primary-500">About</a>
             </li>
@@ -60,23 +60,23 @@
           items-center
           py-4
           border-b-1
-          text-sm
+          text-xs
           flex
+          justify-center
           overflow-x-auto
-          font-bold
         "
       >
-        <li class="inline-block w-auto mr-5">
+        <li class="inline-block w-auto mr-7">
           <a href="#trading" class="text-gray-700 hover:text-primary-500"
             >About</a
           >
         </li>
-        <li class="inline-block w-auto mr-5">
+        <li class="inline-block w-auto mr-7">
           <a href="#services" class="text-gray-700 hover:text-primary-500"
             >Portfolio</a
           >
         </li>
-        <li class="inline-block w-auto mr-5">
+        <li class="inline-block w-auto mr-7">
           <a href="#contact" class="text-gray-700 hover:text-primary-500"
             >Work</a
           >
