@@ -1,12 +1,12 @@
 <template>
-  <div class="font-sans overflow-x-hidden relative pb-20 md:pb-10">
+  <div class="font-sans relative pb-20 md:pb-10">
     <img
       src="/patterns/yellow_ellipse.png"
       class="w-52 h-auto top-0 right-0 hidden md:block absolute"
       style="z-index: 0"
       alt=""
     />
-    <header class="navbar md:sticky top-0 left-0 z-20">
+    <header class="navbar w-full md:sticky top-0 left-0 z-20">
       <div
         class="
           px-4

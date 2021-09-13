@@ -1,5 +1,5 @@
 <template>
-  <section class="px-4 py-20" id="work">
+  <section id="work" class="px-4 py-20">
     <div class="max-w-2xl mx-auto">
       <div class="mb-5 flex items-center max-w-md">
         <h2 class="text-gray-900 text-3xl font-bold">

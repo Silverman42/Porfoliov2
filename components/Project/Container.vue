@@ -1,5 +1,5 @@
 <template>
-  <section class="px-4 py-20" id="portfolio">
+  <section id="portfolio" class="px-4 py-20">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-10 font-bold">
         <span class="font-mono block text-primary-600 text-lg mr-2">01</span>
