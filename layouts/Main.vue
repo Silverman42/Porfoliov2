@@ -23,16 +23,16 @@
         <nav v-if="isHomePage === true" class="flex items-center text-sm">
           <ul class="md:flex text-gray-600 items-center mr-4 hidden">
             <li class="mr-9">
-              <a href="#trading" class="hover:text-primary-500">About</a>
+              <a href="#about" class="hover:text-primary-500">About</a>
             </li>
             <li class="mr-9">
-              <a href="#services" class="hover:text-primary-500">Portfolio</a>
+              <a href="#portfolio" class="hover:text-primary-500">Portfolio</a>
             </li>
             <li class="mr-9">
-              <a href="#contact" class="hover:text-primary-500">Work</a>
+              <a href="#work" class="hover:text-primary-500">Work</a>
             </li>
             <li class="mr-9">
-              <a href="#about" class="hover:text-primary-500">Contact</a>
+              <a href="#contact" class="hover:text-primary-500">Contact</a>
             </li>
           </ul>
         </nav>
@@ -67,22 +67,20 @@
         "
       >
         <li class="inline-block w-auto mr-7">
-          <a href="#trading" class="text-gray-700 hover:text-primary-500"
+          <a href="#about" class="text-gray-700 hover:text-primary-500"
             >About</a
           >
         </li>
         <li class="inline-block w-auto mr-7">
-          <a href="#services" class="text-gray-700 hover:text-primary-500"
+          <a href="#portfolio" class="text-gray-700 hover:text-primary-500"
             >Portfolio</a
           >
         </li>
         <li class="inline-block w-auto mr-7">
-          <a href="#contact" class="text-gray-700 hover:text-primary-500"
-            >Work</a
-          >
+          <a href="#work" class="text-gray-700 hover:text-primary-500">Work</a>
         </li>
         <li class="inline-block w-auto">
-          <a href="#about" class="text-gray-700 hover:text-primary-500"
+          <a href="#contact" class="text-gray-700 hover:text-primary-500"
             >Contact</a
           >
         </li>

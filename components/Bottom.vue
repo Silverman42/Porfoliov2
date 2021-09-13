@@ -1,5 +1,5 @@
 <template>
-  <section class="px-4 py-20">
+  <section class="px-4 py-20" id="contact">
     <div class="max-w-5xl mx-auto">
       <div
         class="
