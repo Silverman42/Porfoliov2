@@ -73,12 +73,12 @@ export default {
   -webkit-text-stroke: 1px theme('colors.secondary.600');
 }
 .blog-search__input {
-  @apply rounded-full max-w-full pr-9  border h-8 p-3 hover:border-gray-500 outline-none text-gray-700;
+  @apply rounded-full w-full pr-9  border h-10 p-3 hover:border-gray-500 outline-none text-gray-700;
 }
 .blog-search__container {
-  @apply relative mt-1 w-44;
+  @apply relative mt-1 w-full md:w-44;
 }
 .blog-search__icon {
-  @apply text-gray-500 absolute right-2 top-1;
+  @apply text-gray-500 absolute right-2 top-2;
 }
 </style>
