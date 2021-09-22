@@ -1,7 +1,7 @@
 <template>
   <section class="px-4 pt-32 pb-20">
     <div class="max-w-5xl mx-auto">
-      <p class="text-gray-500 md:text-lg mb-5">
+      <p class="text-gray-500 md:text-lg mb-5 hide-slideUp">
         Hello, I am <span class="text-gray-900 inline-block">S</span
         ><span class="hidden-name inline-block align-middle">ylvester</span>
         <span class="text-gray-900">U</span
@@ -9,7 +9,7 @@
         <span class="text-gray-900">N</span
         ><span class="hidden-name inline-block align-middle">keze</span>
       </p>
-      <h1 class="font-bold text-gray-800 text-3xl md:text-7xl">
+      <h1 class="font-bold text-gray-800 text-3xl md:text-7xl hide-slideUp">
         I build web tools that increase productivity and profit for
         <span
           id="serviceType"

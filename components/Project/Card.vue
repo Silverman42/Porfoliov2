@@ -1,5 +1,5 @@
 <template>
-  <div class="contain">
+  <div class="contain hide-slideUp">
     <div class="link-container">
       <span class="project-icon">
         <span>{{ cardNumber | prependNumber }}</span>

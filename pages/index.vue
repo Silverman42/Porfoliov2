@@ -47,7 +47,9 @@
 </template>
 
 <script>
+import observer from '~/assets/mixins/Observer'
 export default {
+  mixins: [observer],
   layout: 'Main',
   transition: {
     name: 'zoom',

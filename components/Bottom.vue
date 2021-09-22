@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="px-4 py-20">
+  <section id="contact" class="px-4 py-20 hide-slideUp">
     <div class="max-w-5xl mx-auto">
       <div
         class="
