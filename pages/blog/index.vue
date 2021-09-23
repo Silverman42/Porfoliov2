@@ -35,11 +35,24 @@
         </div>
       </div>
       <div class="w-full md:w-9/12 min-h-screen">
-        <post-item
-          v-for="(post, index) in 15"
-          :key="index"
-          to="/blog/how-to-create-a-calender-with-vue-js"
-        ></post-item>
+        <div v-if="count > 0">
+          <post-item
+            v-for="(post, index) in count"
+            :key="index"
+            to="/blog/how-to-create-a-calender-with-vue-js"
+          ></post-item>
+        </div>
+        <div v-else class="flex flex-col items-center">
+          <img src="/sad_face.png" class="w-32" alt="sad face" />
+          <div class="text-3xl mt-3 text-gray-700 text-center font-bold">
+            No article found
+          </div>
+          <p class="text-center text-sm mt-2">
+            <button href="" class="text-primary-500 hover:text-primary-700">
+              Please fetch articles again !
+            </button>
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -54,6 +67,11 @@ export default {
   transition: {
     name: 'zoom',
     mode: 'out-in',
+  },
+  data() {
+    return {
+      count: 0,
+    }
   },
 }
 </script>

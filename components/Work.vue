@@ -1,5 +1,11 @@
 <template>
-  <section id="work" class="px-4 py-20">
+  <section id="work" class="px-4 py-20 relative">
+    <figure class="absolute right-20 top-10 hidden lg:inline-block">
+      <img src="/patterns/pattern_2.svg" class="w-40 opacity-40" />
+    </figure>
+    <figure class="absolute left-16 top-10 hidden lg:inline-block">
+      <img src="/patterns/pattern_3.svg" class="w-80 opacity-50" />
+    </figure>
     <div class="max-w-2xl mx-auto">
       <div class="mb-5 flex items-center max-w-md">
         <h2 class="text-gray-900 text-3xl font-bold hide-slideInRight">
