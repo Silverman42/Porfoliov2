@@ -1,7 +1,7 @@
 <template>
   <div class="mail">
-    <a class="link" href="mailto:sylvesternkeze@gmail.com">
-      sylvesternkeze@gmail.com
+    <a class="link" href="mailto:nkezesylvester@gmail.com">
+      nkezesylvester@gmail.com
     </a>
     <div class="divider"></div>
   </div>
