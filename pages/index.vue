@@ -94,7 +94,11 @@ export default {
         content: 'https://sundev.netlify.app',
       },
       {
-        property: 'og:title"',
+        property: 'og:title',
+        content: 'SUN :: Sylvester Uche Nkeze',
+      },
+      {
+        property: 'og:decsription',
         content:
           'A software engineer with a love for beautiful and function websites and applications',
       },
@@ -107,7 +111,11 @@ export default {
         content: 'https://sundev.netlify.app',
       },
       {
-        property: 'twitter:title"',
+        property: 'twitter:title',
+        content: 'SUN :: Sylvester Uche Nkeze',
+      },
+      {
+        property: 'twitter:description',
         content:
           'A software engineer with a love for beautiful and function websites and applications',
       },
