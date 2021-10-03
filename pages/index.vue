@@ -60,7 +60,8 @@ export default {
       .only(['fullname', 'description', 'devstack', 'weblink', 'github'])
       .fetch()
     const experiences = await $content('work')
-      .only(['name', 'title', 'from', 'to', 'body', 'fullname'])
+      .only(['name', 'title', 'from', 'to', 'body', 'fullname', 'position'])
+      .sortBy('position', 'desc')
       .fetch()
     const workplace = await experiences.map((job) => {
       return job.name.replace(' ', '-')
@@ -73,6 +74,44 @@ export default {
   },
   data() {
     return {}
+  },
+  head: {
+    title: 'SUN :: Sylvester Uche Nkeze',
+    meta: [
+      { charset: 'utf-8' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'A software engineer with a love for beautiful and function websites and applications',
+      },
+      {
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        property: 'og:url',
+        content: 'https://sundev.netlify.app',
+      },
+      {
+        property: 'og:title"',
+        content:
+          'A software engineer with a love for beautiful and function websites and applications',
+      },
+      {
+        property: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        property: 'twitter:url',
+        content: 'https://sundev.netlify.app',
+      },
+      {
+        property: 'twitter:title"',
+        content:
+          'A software engineer with a love for beautiful and function websites and applications',
+      },
+    ],
   },
 }
 </script>

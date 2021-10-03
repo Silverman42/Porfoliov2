@@ -17,21 +17,18 @@
           ><span class="hidden-name inline-block align-middle">keze</span>
         </p>
         <h1 class="font-bold text-gray-800 text-3xl md:text-7xl">
-          I build web tools that increase productivity and profit for
-        </h1>
-        <h1
-          id="serviceType"
-          class="
-            font-bold
-            text-3xl
-            md:text-7xl
-            bg-clip-text bg-gradient-to-r
-            to-primary-700
-            from-secondary-500
-            text-transparent
-          "
-        >
-          {{ workTypes[defaultWorkTypeIndex] }}
+          I build visually appealing websites and softwares for
+          <span
+            id="serviceType"
+            class="
+              bg-clip-text bg-gradient-to-r
+              to-primary-700
+              from-secondary-500
+              text-transparent
+            "
+          >
+            {{ workTypes[defaultWorkTypeIndex] }}
+          </span>
         </h1>
       </div>
       <div class="w-full">

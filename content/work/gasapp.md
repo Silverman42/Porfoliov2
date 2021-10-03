@@ -3,6 +3,7 @@ name: Gasapp
 fullname: Gasapp Ltd
 title: Lead Software Engineer (Contract)
 from: May 2021
+position: 3
 to: September 2021
 ---
 

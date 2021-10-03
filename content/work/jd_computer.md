@@ -3,6 +3,7 @@ name: JD-Computers
 fullname: JD Computer Technologies
 title: Lead Software Engineer (Contract)
 from: January 2019
+position: 2
 to: Present
 ---
 
