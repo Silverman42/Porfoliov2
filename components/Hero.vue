@@ -21,6 +21,8 @@
           <span
             id="serviceType"
             class="
+              block
+              md:inline
               bg-clip-text bg-gradient-to-r
               to-primary-700
               from-secondary-500
