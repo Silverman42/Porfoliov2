@@ -76,7 +76,7 @@ export default {
     return {}
   },
   head: {
-    title: 'SUN :: Sylvester Uche Nkeze',
+    title: 'I am SUN',
     meta: [
       { charset: 'utf-8' },
       {

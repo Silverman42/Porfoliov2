@@ -16,8 +16,16 @@ export default {
       { name: 'theme-color', content: '#115e59' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
+      {
+        property: 'og:image',
+        content: 'https://sundev.netlify.app/banner.png',
+      },
+      {
+        property: 'twitter:image',
+        content: 'https://sundev.netlify.app/banner.png',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/png', href: '/icon.png' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

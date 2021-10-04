@@ -19,7 +19,9 @@
           py-3
         "
       >
-        <div class="w-20 font-bold">S U N</div>
+        <nuxt-link to="/" class="w-10 inline-block font-bold">
+          <img src="/logo.svg" class="w-full h-auto" />
+        </nuxt-link>
         <nav v-if="isHomePage === true" class="flex items-center text-sm">
           <ul class="md:flex text-gray-600 items-center mr-4 hidden">
             <li class="mr-9">
