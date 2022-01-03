@@ -51,9 +51,10 @@
             <li>Git</li>
           </ul>
         </div>
-        <div class="mx-auto lg:ml-auto mb-5 lg:mb-0 w-60 hide-slideUp">
+        <div class="mb-10 lg:mb-0 lg:w-5/12 w-full hide-slideUp">
           <img
-            src="/profile_image.png"
+            loading="lazy"
+            src="/profile_image_2.jpg"
             class="w-full bg-black rounded-3xl"
             alt="Sylvester's profile image"
           />
