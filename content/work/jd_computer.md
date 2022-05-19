@@ -4,7 +4,7 @@ fullname: JD Computer Technologies
 title: Lead Software Engineer (Contract)
 from: January 2019
 position: 2
-to: Present
+to: December 2021
 ---
 
 - Tutored and mentored over 30 students on full-stack web development courses.
